@@ -1,0 +1,16 @@
+PODS:
+  - MenuView (0.1.0)
+
+DEPENDENCIES:
+  - MenuView (from `../`)
+
+EXTERNAL SOURCES:
+  MenuView:
+    :path: ../
+
+SPEC CHECKSUMS:
+  MenuView: 3ef4ac41157fa053ce24d4cb5f453c8f2bbb4d31
+
+PODFILE CHECKSUM: a69b75cdd01e6560a268806a3b92d7f3ad79248b
+
+COCOAPODS: 1.3.1

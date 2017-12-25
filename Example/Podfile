@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'MenuView_Example' do
+  pod 'MenuView', :path => '../'
+
+  target 'MenuView_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

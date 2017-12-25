@@ -1,0 +1,22 @@
+{
+  "name": "MenuView",
+  "version": "0.1.0",
+  "summary": "A short description of MenuView.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/vijaykarthik/MenuView",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "vijaykarthik": "vijaykarthik.v@technoduce.com"
+  },
+  "source": {
+    "git": "https://github.com/vijaykarthik/MenuView.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "MenuView/Classes/**/*"
+}

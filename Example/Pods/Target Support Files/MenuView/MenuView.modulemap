@@ -1,0 +1,6 @@
+framework module MenuView {
+  umbrella header "MenuView-umbrella.h"
+
+  export *
+  module * { export * }
+}
