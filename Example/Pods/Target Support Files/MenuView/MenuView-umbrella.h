@@ -10,6 +10,7 @@
 #endif
 #endif
 
+#import "MenuView.h"
 
 FOUNDATION_EXPORT double MenuViewVersionNumber;
 FOUNDATION_EXPORT const unsigned char MenuViewVersionString[];
