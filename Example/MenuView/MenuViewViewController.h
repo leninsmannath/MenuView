@@ -2,12 +2,16 @@
 //  MenuViewViewController.h
 //  MenuView
 //
-//  Created by vijaykarthik on 12/25/2017.
-//  Copyright (c) 2017 vijaykarthik. All rights reserved.
+ 
 //
 
-@import UIKit;
-
-@interface MenuViewViewController : UIViewController
+#import <UIKit/UIKit.h>
+#import "MenuView.h"
+@interface MenuViewViewController : UIViewController<MenuViewDelegate>
+{
+    MenuView *Menu;
+}
+@property (weak, nonatomic) IBOutlet UIButton *btnMenu;
+- (IBAction)BtnMenu:(id)sender;
 
 @end
