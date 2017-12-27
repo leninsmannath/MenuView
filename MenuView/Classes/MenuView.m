@@ -2,12 +2,9 @@
 //  MenuView.m
 //  MenuView
 //
-//  Created by Bijesh N on 12/28/12.
-//  Copyright (c) 2012 Nitor Infotech. All rights reserved.
-//
+
 
 #import "MenuView.h"
-#import "QuartzCore/QuartzCore.h"
 
 @interface MenuView ()
 @property(nonatomic, strong) UITableView *table;
@@ -29,7 +26,7 @@
         self.list = [NSArray arrayWithArray:arr];
         self.frame = CGRectMake(btn.origin.x, btn.origin.y, btn.size.width, 0);
         self.layer.shadowOffset = CGSizeMake(-5, 5);
-        self.backgroundColor = [[UIColor lightGrayColor] colorWithAlphaComponent:0.4];
+        self.backgroundColor = [[UIColor lightGrayColor] colorWithAlphaComponent:0.1];
        
         self.layer.masksToBounds = NO;
         self.layer.cornerRadius = 8;
@@ -100,13 +97,13 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
-        cell.textLabel.font = _menuFont;
     }
+    cell.textLabel.font = _menuFont;
     cell.textLabel.text =[list objectAtIndex:indexPath.row];
     cell.textLabel.textColor = [UIColor darkGrayColor];
     
     UIView * v = [[UIView alloc] init];
-    v.backgroundColor = [UIColor grayColor];
+    v.backgroundColor = [UIColor lightGrayColor];
     cell.selectedBackgroundView = v;
     
     return cell;
